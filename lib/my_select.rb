@@ -5,6 +5,7 @@ def my_select(collection)
    if collection[i].block == true
      result << collection[i]
    end
+   i = i + 1
  end
  result
 end
