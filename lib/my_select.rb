@@ -1,11 +1,11 @@
 def my_select(collection)
  i = 0
- result = []
+ select = []
  while i < collection.length
-   if collection[i].block == true
+   if yield(collection[i]) == true
      result << collection[i]
    end
-   i = i + 1
+   i += 1
  end
- result
+ select
 end
